@@ -17,6 +17,7 @@ export const NETWORKS = [
   'sepolia',
   'base',
   'base_sepolia',
+  'optimism_sepolia'
 ];
 
 export type Network = (typeof NETWORKS)[number];

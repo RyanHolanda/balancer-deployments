@@ -21,6 +21,7 @@ A Managed Pool is a Weighted Pool with mutable tokens and weights, designed to b
 - [Base mainnet addresses](./output/base.json)
 - [Sepolia testnet addresses](./output/sepolia.json)
 - [Base Sepolia Testnet addresses](./output/base_sepolia.json)
+- [Optimism Sepolia Testnet addresses](./output/optimism_sepolia.json)
 - [`ManagedPoolFactory` artifact](./artifact/ManagedPoolFactory.json)
 - [`ManagedPoolAddRemoveTokenLib` artifact](./artifact/ManagedPoolAddRemoveTokenLib.json)
 - [`ManagedPoolAmmLib` artifact](./artifact/ManagedPoolAmmLib.json)

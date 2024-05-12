@@ -450,10 +450,17 @@ export default {
       {
         network: 'base_sepolia',
         chainId: 84532,
-        apiKey: "API-KEY",
         urls: {
           apiURL: 'https://api-sepolia.basescan.org/api',
           browserURL: 'https://sepolia.basescan.org/',
+        },
+      },
+      {
+        network: 'optimism_sepolia',
+        chainId: 11155420,
+        urls: {
+          apiURL: 'https://api-sepolia-optimistic.etherscan.io/api',
+          browserURL: 'https://sepolia-optimism.etherscan.io/',
         },
       },
     ],
