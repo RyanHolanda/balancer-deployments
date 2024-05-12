@@ -16,4 +16,5 @@ This contract is expected to be eventually replaced by one with a) native suppor
 - [Polygon zkeVM mainnet addresses](./output/zkevm.json)
 - [Base mainnet addresses](./output/base.json)
 - [Sepolia testnet addresses](./output/sepolia.json)
+- [Base Sepolia Testnet addresses](./output/base_sepolia.json)
 - [`Authorizer` artifact](./artifact/Authorizer.json)

@@ -14,4 +14,5 @@ Deployment of the `ProtocolFeePercentagesProvider` contract. It provides a conve
 - [Polygon zkeVM mainnet addresses](./output/zkevm.json)
 - [Base mainnet addresses](./output/base.json)
 - [Sepolia testnet addresses](./output/sepolia.json)
+- [Base Sepolia Testnet addresses](./output/base_sepolia.json)
 - [`ProtocolFeePercentagesProvider` artifact](./artifact/ProtocolFeePercentagesProvider.json)

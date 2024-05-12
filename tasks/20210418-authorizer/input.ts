@@ -33,4 +33,7 @@ export default {
   base: {
     admin: '0xC40DCFB13651e64C8551007aa57F9260827B6462',
   },
+  base_sepolia: {
+    admin: '0x36591DeBffCf727D5EEA2Cb6A745ee905Fae91C8',
+  },
 };

@@ -447,6 +447,15 @@ export default {
           browserURL: 'https://basescan.org/',
         },
       },
+      {
+        network: 'base_sepolia',
+        chainId: 84532,
+        apiKey: "API-KEY",
+        urls: {
+          apiURL: 'https://api-sepolia.basescan.org/api',
+          browserURL: 'https://sepolia.basescan.org/',
+        },
+      },
     ],
   },
 };

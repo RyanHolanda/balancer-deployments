@@ -18,5 +18,6 @@ Aditionally, the `WETH` argument may represent different things in different net
 - [Polygon zkeVM mainnet addresses](./output/zkevm.json)
 - [Base mainnet addresses](./output/base.json)
 - [Sepolia testnet addresses](./output/sepolia.json)
+- [Base Sepolia Testnet addresses](./output/base_sepolia.json)
 - [`Vault` artifact](./artifact/Vault.json)
 - [`BalancerHelpers` artifact](./artifact/BalancerHelpers.json)
