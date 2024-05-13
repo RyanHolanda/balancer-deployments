@@ -4,7 +4,6 @@ import '@nomiclabs/hardhat-waffle';
 import 'hardhat-local-networks-config-plugin';
 import 'hardhat-ignore-warnings';
 import 'tsconfig-paths/register';
-
 import './src/helpers/setupTests';
 
 import { task } from 'hardhat/config';
@@ -34,8 +33,21 @@ import {
   saveTimelockAuthorizerConfig,
   withRetries,
 } from './src/network';
+import { verify } from 'crypto';
 
 const THEGRAPHURLS: { [key: string]: string } = {};
+
+task('deploy-managed-pool-v2')
+  .setAction(async(args: { id: string; force?: boolean; key?: string; verbose?: boolean }, hre: HardhatRuntimeEnvironment) => {
+    Logger.setDefaults(false, args.verbose || false);
+
+    const apiKey = args.key ?? (hre.config.networks[hre.network.name] as any).verificationAPIKey;
+    const verifier = apiKey ? new Verifier(hre.network, apiKey) : undefined;
+    await new Task("20210418-authorizer", TaskMode.LIVE, hre.network.name, verifier).run();
+    await new Task("20210418-vault", TaskMode.LIVE, hre.network.name, verifier).run();
+    await new Task("20220725-protocol-fee-percentages-provider", TaskMode.LIVE, hre.network.name,  verifier).run();
+    await new Task("20230411-managed-pool-v2", TaskMode.LIVE, hre.network.name, verifier).run();
+  })
 
 task('deploy', 'Run deployment task')
   .addParam('id', 'Deployment task ID')
@@ -461,6 +473,14 @@ export default {
         urls: {
           apiURL: 'https://api-sepolia-optimistic.etherscan.io/api',
           browserURL: 'https://sepolia-optimism.etherscan.io/',
+        },
+      },
+      {
+        network: 'arbitrum_sepolia',
+        chainId: 421614,
+        urls: {
+          apiURL: 'https://api-sepolia.arbiscan.io/api',
+          browserURL: 'https://sepolia.arbiscan.io/',
         },
       },
     ],

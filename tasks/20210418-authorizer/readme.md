@@ -18,4 +18,5 @@ This contract is expected to be eventually replaced by one with a) native suppor
 - [Sepolia testnet addresses](./output/sepolia.json)
 - [Base Sepolia Testnet addresses](./output/base_sepolia.json)
 - [Optimism Sepolia Testnet addresses](./output/optimism_sepolia.json)
+- [Arbitrum Sepolia Testnet addresses](./output/arbitrum_sepolia.json)
 - [`Authorizer` artifact](./artifact/Authorizer.json)

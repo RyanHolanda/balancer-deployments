@@ -38,5 +38,8 @@ export default {
   },
   optimism_sepolia: {
     admin: '0x36591DeBffCf727D5EEA2Cb6A745ee905Fae91C8',
+  },
+  arbitrum_sepolia: {
+    admin: '0x36591DeBffCf727D5EEA2Cb6A745ee905Fae91C8',
   }
 };

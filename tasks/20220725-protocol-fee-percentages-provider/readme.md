@@ -16,4 +16,5 @@ Deployment of the `ProtocolFeePercentagesProvider` contract. It provides a conve
 - [Sepolia testnet addresses](./output/sepolia.json)
 - [Base Sepolia Testnet addresses](./output/base_sepolia.json)
 - [Optimism Sepolia Testnet addresses](./output/optimism_sepolia.json)
+- [Arbitrum Sepolia Testnet addresses](./output/arbitrum_sepolia.json)
 - [`ProtocolFeePercentagesProvider` artifact](./artifact/ProtocolFeePercentagesProvider.json)
