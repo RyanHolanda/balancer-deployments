@@ -15,4 +15,7 @@ result they would have if called on the Vault given the current state.
 - [Polygon zkeVM mainnet addresses](./output/zkevm.json)
 - [Base mainnet addresses](./output/base.json)
 - [Sepolia testnet addresses](./output/sepolia.json)
+- [Base Sepolia testnet addresses](./output/base_sepolia.json)
+- [Optimism Sepolia testnet addresses](./output/optimism_sepolia.json)
+- [Arbitrum Sepolia testnet addresses](./output/arbitrum_sepolia.json)
 - [`BalancerQueries` artifact](./artifact/BalancerQueries.json)
